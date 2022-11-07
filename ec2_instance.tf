@@ -7,4 +7,7 @@ provider "aws" {
 resouce ec2_instance{
     ami = "ami-09d3b3274b6c5d4aa"
     instance_type = "ami-09d3b3274b6c5d4aa"
+    tag = {
+       Name = "testserver1"
+    }
 }
